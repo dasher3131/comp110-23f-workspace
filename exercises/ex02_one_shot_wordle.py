@@ -1,6 +1,6 @@
 """One shot wordle!"""
 
-__author__: (730656282)
+__author__: str = "730656282"
 
 white: str = "\U00002B1C"
 yellow: str = "\U0001F7E8"
@@ -17,7 +17,7 @@ while len(guess) != word_length:
 i: int = 0
 box_string: str = " "
 while i <= word_length - 1:
-    if guess[i] == secret_word [i]:
+    if guess[i] == secret_word[i]:
         box_string = box_string + green
     else:
         guessed_letter_exists: bool = False
@@ -38,6 +38,3 @@ if guess != secret_word:
     print("Not quite. Play again soon! ")
 else: 
     print("Woo! You got it!")
-        
-
-    
